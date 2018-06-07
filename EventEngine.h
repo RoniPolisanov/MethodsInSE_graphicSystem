@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef __EVENTENGINE__
+#define __EVENTENGINE__
+
 #include "Control.h"
 #include <windows.h>
 #include "Graphics.h"
@@ -17,3 +20,5 @@ private:
 	HANDLE _console;
 	DWORD _consoleMode;
 };
+
+#endif //!__EVENTENGINE__

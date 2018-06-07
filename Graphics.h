@@ -1,5 +1,7 @@
 #pragma once
 
+#ifndef __GRAPHICS__
+#define __GRAPHICS__
 #include <string>
 #include <windows.h>
 
@@ -26,5 +28,8 @@ private:
 
 	void updateConsoleAttributes();
 };
-
+// if cursor inside frame
+// x,y = cursor\mouse location | left,top,width,height = frame
 bool isInside(int x, int y, int left, int top, int width, int height);
+
+#endif //!__GRAPHICS__
