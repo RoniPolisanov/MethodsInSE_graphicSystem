@@ -61,7 +61,7 @@ void EventEngine::run(Control &c)
 		default:
 			break;
 		}
-		return;
+		
 	}
 }
 

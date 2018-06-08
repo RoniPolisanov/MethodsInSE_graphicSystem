@@ -3,10 +3,10 @@
 #define __TEXTBOX__
 
 #include "Label.h"
-
+#include "Panel.h"
 using namespace std;
 
-class TextBox : public Control
+class TextBox : public Panel
 {
 private: 
 	string value;
