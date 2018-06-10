@@ -5,6 +5,7 @@
 
 class Button
 {
+
 public:
 	Button();
 	~Button();

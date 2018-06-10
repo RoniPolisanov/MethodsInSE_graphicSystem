@@ -22,7 +22,7 @@ public:
 	static void setFocus(Control& control) {};
 	
 
-	virtual void draw(Graphics& g, int x, int y, size_t z) { cout << "in draw"; };
+	virtual void draw(Graphics& g, int x, int y, size_t z) {};
 	virtual void mousePressed(int x, int y, bool isLeft) {};
 	virtual void keyDown(int keyCode, char charecter) {};
 	virtual short getLeft() { return 0; };
