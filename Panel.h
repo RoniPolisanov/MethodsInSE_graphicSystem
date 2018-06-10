@@ -12,8 +12,8 @@ private:
 	Label label;
 public:
 	Panel();
-	void addPanel(Panel* panelToAdd) {};
-	vector<Panel*>* getPanels() { return Panels; };
+	//void addPanel(Panel* panelToAdd) {};
+	//vector<Panel*>* getPanels() { return Panels; };
 	//void removePanel(); - no need to implement
 	//getallPanels - implemented in control
 	//drawPanel - implemented in control

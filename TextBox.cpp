@@ -6,8 +6,8 @@ TextBox::TextBox(string _value, string _txtLabel) /* : txtLabel(Label::Label(_tx
 	txtLabel = new Label(_txtLabel);
 }
 
-void TextBox::draw(Graphics& g, int x, int y, size_t z) 
-{
-	if (!z)
-		g.write(value);
+//void TextBox::draw(Graphics& g, int x, int y, size_t z) /
+//{
+//	if (!z)
+//		g.write(value);
 }
