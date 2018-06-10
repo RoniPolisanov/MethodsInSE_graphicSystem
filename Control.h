@@ -29,6 +29,7 @@ public:
 	virtual short getTop() { return 0; }
 	virtual void getAllControls(vector<Control*>* controls) {}
 	virtual bool canGetFocus() { return true; }
+
 	~Control();
 };
 

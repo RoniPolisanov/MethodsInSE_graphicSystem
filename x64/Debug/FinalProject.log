@@ -1,13 +1,2 @@
-﻿  Button.cpp
-  Choices.cpp
-  ComboBox.cpp
-  Control.cpp
-  EventEngine.cpp
-  FinalProject.cpp
-  Graphics.cpp
-d:\study\cgradesemsterb\methodsinse\methodsinse_graphicsystem\methodsinse_graphicsystem\graphics.cpp(41): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-d:\study\cgradesemsterb\methodsinse\methodsinse_graphicsystem\methodsinse_graphicsystem\graphics.cpp(46): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
-d:\study\cgradesemsterb\methodsinse\methodsinse_graphicsystem\methodsinse_graphicsystem\graphics.cpp(97): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
-  Label.cpp
-  Generating Code...
+﻿  ComboBox.cpp
   FinalProject.vcxproj -> D:\Study\CgradeSemsterB\MethodsInSE\MethodsInSE_graphicSystem\MethodsInSE_graphicSystem\x64\Debug\FinalProject.exe

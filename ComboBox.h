@@ -9,6 +9,7 @@
 #include "Choices.h"
 //#include "TextBox";
 
+// design pattern of action listener => for button
 
 class ComboBox: public Control
 {
