@@ -1,5 +1,2 @@
 ﻿  ComboBox.cpp
-  EventEngine.cpp
-d:\study\cgradesemsterb\methodsinse\methodsinse_graphicsystem\methodsinse_graphicsystem\eventengine.cpp(81): error C2039: 'canGetFocus': is not a member of 'Control'
-  d:\study\cgradesemsterb\methodsinse\methodsinse_graphicsystem\methodsinse_graphicsystem\control.h(13): note: see declaration of 'Control'
-  Generating Code...
+  FinalProject.vcxproj -> D:\Study\CgradeSemsterB\MethodsInSE\MethodsInSE_graphicSystem\MethodsInSE_graphicSystem\x64\Debug\FinalProject.exe
