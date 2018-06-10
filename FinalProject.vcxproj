@@ -116,6 +116,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="ComboBox.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="EventEngine.cpp" />
     <ClCompile Include="FinalProject.cpp" />
@@ -123,6 +125,8 @@
     <ClCompile Include="Label.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="ComboBox.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="EventEngine.h" />
     <ClInclude Include="Graphics.h" />
