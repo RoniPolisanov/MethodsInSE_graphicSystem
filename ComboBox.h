@@ -2,21 +2,19 @@
 #ifndef __COMBOBOX__
 #define __COMBOBOX__
 
-#include <iostream>
 #include <list>
-#include <string>
 #include "Control.h"
 #include "EventEngine.h"
 #include "Button.h"
+#include "Choices.h"
 //#include "TextBox";
 
-using namespace std; 
 
 class ComboBox: public Control
 {
 	/// only one choice
 	string value = NULL;
-	//list<string,bool> choices;
+	list<Choices> choices;
 	/// after Elbaz create TextBox:
 	//TextBox oneChoice;
 	Button btnViewList;

@@ -117,6 +117,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Choices.cpp" />
     <ClCompile Include="ComboBox.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="EventEngine.cpp" />
@@ -126,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.h" />
+    <ClInclude Include="Choices.h" />
     <ClInclude Include="ComboBox.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="EventEngine.h" />
