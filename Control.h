@@ -1,20 +1,23 @@
 #pragma once
 
-#ifndef __CONTROL__
-#define __CONTROL__
-
-#include "Graphics.h"
+#pragma once
 #include <vector>
-#include <iostream>
+#include "Graphics.h"
 
-using namespace std;
+enum class BorderType		{ Single, Double, None };
+enum class ForegroundColor	{ Red, Blue, Green, Purple, Yellow, White, Black };
+enum class BackgroundColor	{ Red, Blue, Green, Purple, Yellow, White, Black };
 
-class Control
-{
+class Control {
 
 protected:
-	short left;
-	short top;
+	int left, top, width, height;
+	bool showed;
+	static Control* focus;
+	size_t layer = 0;
+	BorderType border = BorderType::None;
+	Graphics graphics;
+	Color foreground = Color::White, background = Color::Black;
 	
 public:
 	Control();
