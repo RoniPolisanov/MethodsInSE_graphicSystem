@@ -1,7 +1,10 @@
 #pragma once
-#ifndef __BUTTON__
-#define __BUTTON__
 
+class Button;
+
+struct MouseListener{
+  virtual void MousePressed(Button &b, int x, int y, bool isLeft) = 0;
+};
 
 class Button
 {
@@ -11,4 +14,3 @@ public:
 	~Button();
 };
 
-#endif // !__BUTTON__
