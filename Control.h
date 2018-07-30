@@ -20,20 +20,24 @@ protected:
 	Color foreground = Color::White, background = Color::Black;
 	
 public:
-	Control();
-	static Control* getFocus() { return NULL; };
-	static void setFocus(Control& control) {};
-	
-
-	virtual void draw(Graphics& g, int x, int y, size_t z) {}
-	virtual void mousePressed(int x, int y, bool isLeft) {}
-	virtual void keyDown(int keyCode, char charecter) {}
-	virtual short getLeft() { return 0; }
-	virtual short getTop() { return 0; }
-	virtual void getAllControls(vector<Control*>* controls) {}
-	virtual bool canGetFocus() { return true; }
-
-	~Control();
+	Control()										{}
+	~Control()										{}
+	inline void Show()								{ this->showed = true; }
+	inline void Hide()								{ this->showed = false; }
+	inline void setLeft(int left)					{ this->left = left; }
+	inline void setTop(int top)						{ this->top = top; }
+	inline void setLayer(size_t layer)				{ this->layer = layer; }
+	inline void SetBorder(BorderType border)		{ this->border = border; }
+	inline int getLeft()							{ return this->left; }
+	inline int getTop()								{ return this->top; }
+	inline int getWidth()							{ return this->width; }
+	inline int getHeight()							{ return this->height; }
+	inline bool getShowed()							{ return this->showed; }
+	inline size_t getLayer()						{ return this->layer; }
+	virtual void draw(Graphics, int, int, size_t) = 0;
+	virtual void mousePressed(int, int, DWORD) = 0;
+	virtual void keyDown(int, char) = 0;
+	virtual bool canGetFocus() = 0;
 };
 
 #endif //!__CONTROL__
