@@ -38,6 +38,9 @@ public:
 	virtual void mousePressed(int, int, DWORD) = 0;
 	virtual void keyDown(int, char) = 0;
 	virtual bool canGetFocus() = 0;
+	static void setFocus(Control&);
+	virtual void SetForeground(Color);
+
 };
 
 #endif //!__CONTROL__
