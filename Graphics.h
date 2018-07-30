@@ -1,15 +1,13 @@
 #pragma once
 
-#ifndef __GRAPHICS__
-#define __GRAPHICS__
 #include <string>
-#include <windows.h>
+#include <Windows.h>
 
 using namespace std;
 
 enum class Color { Black, Blue, Green, Red, Cyan, Purple, Orange, White };
 
-class Graphics
+class Graphics 
 {
 public:
 	Graphics(DWORD stdHandle = STD_OUTPUT_HANDLE);
@@ -28,8 +26,5 @@ private:
 
 	void updateConsoleAttributes();
 };
-// if cursor inside frame
-// x,y = cursor\mouse location | left,top,width,height = frame
-bool isInside(int x, int y, int left, int top, int width, int height);
 
-#endif //!__GRAPHICS__
+bool isInside(int x, int y, int left, int top, int width, int height);

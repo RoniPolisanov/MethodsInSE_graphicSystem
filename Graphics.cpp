@@ -72,32 +72,32 @@ void Graphics::updateConsoleAttributes()
 
 	switch (_foreground)
 	{
-		case Color::Black:	break;
-		case Color::Blue:	attributes |= FOREGROUND_BLUE; break;
-		case Color::Green:	attributes |= FOREGROUND_GREEN; break;
-		case Color::Red:	attributes |= FOREGROUND_RED; break;
-		case Color::Cyan:	attributes |= FOREGROUND_BLUE | FOREGROUND_GREEN; break;
-		case Color::Purple:	attributes |= FOREGROUND_BLUE | FOREGROUND_RED; break;
-		case Color::Orange: attributes |= FOREGROUND_GREEN | FOREGROUND_RED; break;
-		case Color::White:	attributes |= FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_RED; break;
+	case Color::Black:	break;
+	case Color::Blue:	attributes |= FOREGROUND_BLUE; break;
+	case Color::Green:	attributes |= FOREGROUND_GREEN; break;
+	case Color::Red:	attributes |= FOREGROUND_RED; break;
+	case Color::Cyan:	attributes |= FOREGROUND_BLUE | FOREGROUND_GREEN; break;
+	case Color::Purple:	attributes |= FOREGROUND_BLUE | FOREGROUND_RED; break;
+	case Color::Orange: attributes |= FOREGROUND_GREEN | FOREGROUND_RED; break;
+	case Color::White:	attributes |= FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_RED; break;
 	}
 
 	switch (_background)
 	{
-		case Color::Black:	break;
-		case Color::Blue:	attributes |= BACKGROUND_BLUE; break;
-		case Color::Green:	attributes |= BACKGROUND_GREEN; break;
-		case Color::Red:	attributes |= BACKGROUND_RED; break;
-		case Color::Cyan:	attributes |= BACKGROUND_BLUE | BACKGROUND_GREEN; break;
-		case Color::Purple:	attributes |= BACKGROUND_BLUE | BACKGROUND_RED; break;
-		case Color::Orange: attributes |= BACKGROUND_GREEN | BACKGROUND_RED; break;
-		case Color::White:	attributes |= BACKGROUND_BLUE | BACKGROUND_GREEN | BACKGROUND_RED; break;
+	case Color::Black:	break;
+	case Color::Blue:	attributes |= BACKGROUND_BLUE; break;
+	case Color::Green:	attributes |= BACKGROUND_GREEN; break;
+	case Color::Red:	attributes |= BACKGROUND_RED; break;
+	case Color::Cyan:	attributes |= BACKGROUND_BLUE | BACKGROUND_GREEN; break;
+	case Color::Purple:	attributes |= BACKGROUND_BLUE | BACKGROUND_RED; break;
+	case Color::Orange: attributes |= BACKGROUND_GREEN | BACKGROUND_RED; break;
+	case Color::White:	attributes |= BACKGROUND_BLUE | BACKGROUND_GREEN | BACKGROUND_RED; break;
 	}
 
 	SetConsoleTextAttribute(_console, attributes);
 }
 
-bool isInside(int x, int y, int left, int top, int width, int height)
+bool isInside(int x, int y, int left, int top, int width, int height)	//check mouse click location
 {
 	x -= left;
 	y -= top;
