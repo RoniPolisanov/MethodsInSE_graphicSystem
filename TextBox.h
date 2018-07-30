@@ -1,23 +1,20 @@
-#pragma once
-#ifndef __TEXTBOX__
-#define __TEXTBOX__
-
-#include <iostream>
-#include "Label.h"
+#pragma
+#include "Control.h"
 
 class TextBox : public Control
 {
-private: 
-	Label label;
-	int x;
-	int y;
-	int limit;
-	string value;
-public:
-	TextBox(string _label, int _posX, int _posY, int _limit) : label(Label::Label(_label)), x(_posX), y(_posY), limit(_limit), value("") {};	//constructor
-	
-	void draw(Graphics& g, int x, int y, size_t z);
-	~TextBox();
-};
 
-#endif // !__TEXTBOX__
+  private:
+	string value = "";
+
+  public:
+	TextBox(int);
+	void SetValue(string _value) { this->value = _value; }
+	string GetValue() { return this->value; }
+	bool canGetFocus() { return true; }
+	int getWidth() { return this->width; }
+	int getHeight() { return this->height; }
+	void draw(Graphics, int, int, size_t);
+	void keyDown(int, char);
+	void mousePressed(int, int, DWORD);
+};
