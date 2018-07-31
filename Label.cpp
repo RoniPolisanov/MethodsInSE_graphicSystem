@@ -1,22 +1,9 @@
+//Authors: Haim Rlnaz ~ Roni Polisanov ~ Reut Leib ~ Yaniv Yona
 #include "Label.h"
-#include <iostream>
 
-Label::Label(string value) : Control(), value(value) {};
-
-string Label::getValue()
-{
-    return this->value;
+Label::Label(int _width) {
+    this->width = _width;
+    this->height = 1;
+    this->showed = true;
 }
 
-void Label::setValue(string value)
-{
-    this->value = value;
-}
-
-
-void Label::draw(Graphics& g, int x, int y, size_t z)
-{
-    if (!z)
-        g.write(value);
-
-}
