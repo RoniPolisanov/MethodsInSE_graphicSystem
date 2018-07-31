@@ -1,4 +1,4 @@
-//Authors: Haim Rlnaz ~ Roni Polisanov ~ Reut Leib ~ Yaniv Yona
+//Authors: Haim Elbaz ~ Roni Polisanov ~ Reut Leib
 #pragma once
 #include "Control.h"
 
@@ -8,13 +8,12 @@ class Label : public Control
     int width;
     int height = 3;
     string value = "default value";
-
   public:
-    Label(int _width);
-    void SetValue(string _value) { this->value = _value; }
+    Label(int);
+    void SetValue(string value) { this->value = value; }
     string GetValue() { return this->value; }
-    void draw(Graphics g, int i, int j, size_t p);
+    void draw(Graphics, int, int, size_t);
     bool canGetFocus() { return false; }
-    void keyDown(int keyCode, char character) {};
-    void mousePressed(int x, int y, DWORD button) {};
+    void keyDown(int, char) {};
+    void mousePressed(int, int, DWORD) {};
 };

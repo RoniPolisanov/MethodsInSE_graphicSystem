@@ -1,16 +1,18 @@
-//Authors: Haim Rlnaz ~ Roni Polisanov ~ Reut Leib ~ Yaniv Yona
+//Authors: Haim Elbaz ~ Roni Polisanov ~ Reut Leib
 #include "Label.h"
 
-Label::Label(int _width) {
-    this->width = _width;
+Label::Label(int width) {
+    this->width = width;
     this->height = 1;
     this->showed = true;
 }
 
-void Label::draw(Graphics g, int i, int j, size_t p) {
-	graphics.setBackground(this->background);
+void Label::draw(Graphics g, int x, int y, size_t z) {
+	//draw label as requested
+    graphics.setBackground(this->background);
 	graphics.setForeground(this->foreground);
-	graphics.write(i, j, this->GetValue());
+	graphics.write(x, y, this->GetValue());
+    //set default values
 	graphics.setForeground(Color::White);
 	graphics.setBackground(Color::Black);
 }
