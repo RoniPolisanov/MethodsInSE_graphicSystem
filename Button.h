@@ -13,7 +13,13 @@ private:
   MouseListener* listener;
 
 public:
-	Button();
-  
+	Button(int);
+  void SetValue(string value);
+  string GetValue();
+  bool canGetFocus();
+  void draw(Graphics, int, int, size_t);
+  void mousePressed(int, int, DWORD);
+  void keyDown(int, char);
+
 };
 
