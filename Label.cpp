@@ -7,3 +7,10 @@ Label::Label(int _width) {
     this->showed = true;
 }
 
+void Label::draw(Graphics g, int i, int j, size_t p) {
+	graphics.setBackground(this->background);
+	graphics.setForeground(this->foreground);
+	graphics.write(i, j, this->GetValue());
+	graphics.setForeground(Color::White);
+	graphics.setBackground(Color::Black);
+}

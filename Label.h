@@ -1,3 +1,4 @@
+//Authors: Haim Rlnaz ~ Roni Polisanov ~ Reut Leib ~ Yaniv Yona
 #pragma once
 #include "Control.h"
 
