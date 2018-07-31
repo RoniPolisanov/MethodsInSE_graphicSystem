@@ -24,3 +24,14 @@ bool Button::canGetFocus(){
 void Button::keyDown(int keyCode, char character){ 
   this->graphics.clearScreen();
 } 
+
+void Button::mousePressed(){ 
+  return true;
+} 
+
+
+void Button::draw(){ 
+    for (int i = 0; i < options.size(); i++) {
+      // do something
+  }
+} 
