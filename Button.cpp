@@ -8,3 +8,19 @@ Button::Button(int width) {
   this->showed = true;
   this->value = "Submit";
 }
+
+void Button::SetValue(string value){ 
+  this->value = value; 
+} 
+
+string Button::GetValue(){ 
+  return this->value;
+} 
+
+bool Button::canGetFocus(){ 
+  return false;
+} 
+
+void Button::keyDown(int keyCode, char character){ 
+  this->graphics.clearScreen();
+} 
