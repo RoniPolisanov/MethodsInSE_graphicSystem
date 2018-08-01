@@ -24,3 +24,10 @@ bool Button::canGetFocus(){
 void Button::keyDown(int keyCode, char character){ 
   this->graphics.clearScreen();
 } 
+
+void Button::draw(Graphics g, int x, int y, size_t z) {
+  graphics.setBackground(this->background);
+  graphics.setForeground(this->foreground);
+  drawBackground();
+  graphics.write(x, y, this->GetValue());
+}
