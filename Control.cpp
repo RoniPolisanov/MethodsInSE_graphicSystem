@@ -1,6 +1,5 @@
+//Authors: Haim Elbaz ~ Roni Polisanov ~ Reut Leib
 #include "Control.h"
-
-
 
 using namespace std;
 Control* Control::focus = 0;
