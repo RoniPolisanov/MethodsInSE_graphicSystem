@@ -10,7 +10,7 @@ using namespace std;
 
 int main() {
 
-  Label labelName("name");
+  // Label labelName("name");
   return 1;
 }
 

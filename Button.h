@@ -18,6 +18,6 @@ public:
   string GetValue();
   bool canGetFocus();
   void keyDown(int, char);
-
+  void draw(Graphics, int, int, size_t);
 };
 
