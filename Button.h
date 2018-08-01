@@ -19,5 +19,6 @@ public:
   bool canGetFocus();
   void keyDown(int, char);
   void draw(Graphics, int, int, size_t);
+  void mousePressed(int xPos, int yPos, DWORD button) { listener->MousePressed(*this, xPos, yPos, true); }
 };
 

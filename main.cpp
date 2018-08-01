@@ -11,6 +11,8 @@ using namespace std;
 int main() {
 
   // Label labelName("name");
+  Button btnTest(10);
+  btnTest.SetValue("TEST");
   return 1;
 }
 
