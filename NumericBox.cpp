@@ -51,4 +51,13 @@ void NumericBox::mousePressed(int x, int y, DWORD button) {
 	this->graphics.setCursorVisibility(true);
 	this->graphics.moveTo(x, y);
 
+	// Checking and decrementing the number value when clicking "MINUS"
+	if (x == this->getLeft() + 1)
+		if (this->value > this->min)
+			this->SetValue(this->value - 1);
+
+	// Checking and incrementing the number value when clicking "PLUS"
+	if (x == (this->getLeft() + this->getWidth() - 2))
+		if (this->value < this->max)
+			this->SetValue(this->value + 1);
 }
