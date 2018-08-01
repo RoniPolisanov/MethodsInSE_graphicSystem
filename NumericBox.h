@@ -3,7 +3,6 @@
 #include "Control.h"
 
 class NumericBox : public Control {
-
 private:
 	int min, max, value = 0;
 
