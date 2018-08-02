@@ -2,7 +2,7 @@
 #include "Control.h"
 
 class Panel : public Control {
-
+ 
 private:
 	vector<Control*> controls;
 
