@@ -6,6 +6,7 @@
 using namespace std;
 Control *Control::focus = 0;
 
+//set focus on specific control
 void Control::setFocus(Control &control) {
   if (getFocus() != NULL) {
     getFocus()->SetForeground(Color::White);
@@ -19,6 +20,7 @@ void Control::setFocus(Control &control) {
   control.SetForeground(Color::Green);
 }
 
+//draw border to a specific control regarding his border type
 void Control::drawBorder(BorderType border) {
   int i = this->getLeft() - 1, j = this->getTop() - 1;
   switch (border) {
@@ -70,11 +72,13 @@ void Control::drawBorder(BorderType border) {
   }
 }
 
+//set background to a specific control
 void Control::SetForeground(Color color) {
   foreground = color;
   this->graphics.setForeground(color);
 }
 
+//draw background to a specific control regarding his background type
 void Control::drawBackground() {
   graphics.setBackground(this->background);
   graphics.setForeground(this->foreground);

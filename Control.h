@@ -10,7 +10,7 @@ enum class BackgroundColor	{ Red, Blue, Green, Purple, Yellow, White, Black };
 class Control {
 
 protected:
-	int left, top, width, height;
+	int left, top, width, height;		
 	bool showed;
 	static Control* focus;
 	size_t layer = 0;
