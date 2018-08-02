@@ -1,29 +1,17 @@
 #pragma once
-#ifndef __PANEL__
-#define __PANEL__
-
-#include <vector>
-#include <iostream>
 #include "Control.h"
 
-class Panel: public Control
-{
-	vector<Control*> children;
+class Panel : public Control {
 
+private:
+	vector<Control*> controls;
 
 public:
-	Panel();
-	~Panel();
-
-	void draw(Graphics& g, int x, int y, size_t z);
-	void mousePressed(int x, int y, bool isLeft);
-	void keyDown(int keyCode, char charecter);
-	short getLeft();
-	short getTop();
-	void getAllControls(vector<Control*>* controls);
-	void add(Control* ctl);
-	bool canGetFocus() { return true; }	//?
+	Panel(int, int);
+	bool canGetFocus()									{ return false; }
+	void getAllControls(vector <Control*>* myControls)	{ *myControls = this->controls; }
+	void keyDown(int, char)								{}
+	void addControl(Control&, int, int);
+	void draw(Graphics, int, int, size_t);
+	void mousePressed(int, int, DWORD);
 };
-
-
-#endif // !__PANEL__
