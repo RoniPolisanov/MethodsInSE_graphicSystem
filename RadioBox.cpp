@@ -15,7 +15,19 @@ void RadioBox::draw(Graphics g, int x, int y, size_t z) {
 	this->graphics.setBackground(this->background);
 	this->graphics.setForeground(this->foreground);
 
-
+	// Scanning all the options
+	for (int i = 0; i < this->options.size(); i++) {
+		// Marking the selected option
+		if (this->toCheck == i) {
+			this->graphics.write(x, y + i, "(X)");
+			this->graphics.write(x + 7, y + i, this->options[i]);
+		}
+		// Marking non selected option
+		else {
+			this->graphics.write(x, y + i, "( )");
+			this->graphics.write(x + 7, y + i, this->options[i]);
+		}
+	}
 	// Setting Foreground and Background to default
 	this->graphics.setForeground(Color::White);
 	this->graphics.setBackground(Color::Black);
