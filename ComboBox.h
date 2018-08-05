@@ -4,37 +4,27 @@
 
 #include <list>
 #include "Control.h"
-#include "EventEngine.h"
-#include "Button.h"
-#include "Choices.h"
-//#include "TextBox";
+#include "Control.h"
 
-// design pattern of action listener => for button
+class ComboBox: public Control {
 
-class ComboBox: public Control
-{
-	/// only one choice
-	string value = NULL;
-	list<Choices> choices;
-	/// after Elbaz create TextBox:
-	//TextBox oneChoice;
-	Button btnViewList;
-	/// not shore if we need that:
-	//bool isVisabilityList;
-	bool isOpenedList;
-	EventEngine f;
+	vector<string> options;
+	size_t selected;
+	bool isOpened = false;
 
 public:
-	ComboBox();
+	ComboBox(int, vector<string>);
 	~ComboBox();
 
-	void draw(Graphics& g, int x, int y, size_t z) { };
+	virtual void draw(Graphics, int, int, size_t);
 	// only Enter or Space:
-	void mousePressed(int x, int y, bool isLeft) {};
+	virtual void mousePressed(int, int, DWORD);
 	// only Up and Down:
 	void keyDown(int keyCode, char charecter) {};
-	short getLeft() { return 0; };
-	short getTop() { return 0; };
+	size_t GetSelectedIndex()			{ return this->selected; }
+	void SetSelectedIndex(size_t index) { this->selected = index; }
+	//can be focused according to project's definition
+	virtual bool canGetFocus()			{ return true; }	
 };
 
 #endif // __COMBOBOX
