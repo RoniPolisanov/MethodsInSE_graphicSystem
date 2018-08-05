@@ -7,6 +7,28 @@ ComboBox::ComboBox(int width, vector<string> options) {
   this->showed = true;
 }
 
+void ComboBox::mousePressed(int x, int y, DWORD button) {
+  int top = this->getTop();
+  int left = this->getLeft();
+  vector<string> options = this->options;
+
+  switch (this->isOpened) {
+  case false:
+    this->height += options.size();
+    this->isOpened = true;
+    break;
+  case true:
+    for (int k = 0; k < options.size(); ++k) {
+      if (y == top + k + 1) {
+        this->selected = k;
+        this->height -= options.size();
+        this->isOpened = false;
+        break;
+      }
+    }
+  }
+};
+
 void ComboBox::keyDown(int keyCode, char character) {
   int position = this->getTop() + this->GetSelectedIndex() + 1;
   int index = this->GetSelectedIndex();
