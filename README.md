@@ -18,7 +18,7 @@ Psuedo Graphical Forms is a static library API for developing User Interface on 
 ## Components
 
 ### UML Diagram
-<img src="/images/UML.png" width="144px"><br>
+<img src="/images/UML.png" width="444px"><br>
 
 ### UI Components Simulation
 **Panel** <br>
