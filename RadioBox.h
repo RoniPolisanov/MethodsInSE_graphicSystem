@@ -11,6 +11,6 @@ public:
 	void draw(Graphics, int, int, size_t);
 	void keyDown(int, char);
 	void mousePressed(int, int, DWORD);
-	inline size_t GetSelectedIndex() { return this->toCheck; }
+	inline size_t GetSelectedIndex()       { return this->toCheck; }
 	inline void SetSelectedIndex(size_t i) { this->toCheck = i; }
 };

@@ -8,10 +8,10 @@ private:
 
 public:
 	NumericBox(int, int, int);
-	void SetValue(int value) { this->value = value; }
-	int GetValue() { return this->value; }
-	bool canGetFocus() { return false; }
-	void draw(Graphics, int, int, size_t);
-	void keyDown(int, char) {}
+	void SetValue(int value)     { this->value = value; }
+	int GetValue()               { return this->value; }
+	bool canGetFocus()           { return false; }
+	void keyDown(int, char)      {}
 	void mousePressed(int, int, DWORD);
+  void draw(Graphics, int, int, size_t);
 };

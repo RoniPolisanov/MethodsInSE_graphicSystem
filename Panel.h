@@ -8,9 +8,9 @@ private:
 
 public:
 	Panel(int, int);
-	bool canGetFocus()									{ return false; }
+	bool canGetFocus()									                { return false; }
 	void getAllControls(vector <Control*>* myControls)	{ *myControls = this->controls; }
-	void keyDown(int, char)								{}
+	void keyDown(int, char)								              {}
 	void addControl(Control&, int, int);
 	void draw(Graphics, int, int, size_t);
 	void mousePressed(int, int, DWORD);
