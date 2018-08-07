@@ -15,13 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComboBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Control.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="EventEngine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FinalProject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Graphics.cpp">
@@ -30,20 +36,35 @@
     <ClCompile Include="Label.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ComboBox.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Button.cpp">
+    <ClCompile Include="Messagebox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Choices.cpp">
+    <ClCompile Include="NumericBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Panel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RadioBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Control.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -56,16 +77,19 @@
     <ClInclude Include="Label.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ComboBox.h">
+    <ClInclude Include="Messagebox.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Button.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Choices.h">
+    <ClInclude Include="NumericBox.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Panel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RadioBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextBox.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
