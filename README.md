@@ -25,13 +25,13 @@ Psuedo Graphical Forms is a static library API for developing User Interface on 
 <img src="/images/Panel.png" width="344px"/>
 
 **Label** <br>
-<img src="/images/Label.png" width="144px"/>
+<img src="/images/LabelBefore.png" width="144px"/>
 
 **Button** - Use the Mouse to click 'Travel'.<br>
 <img src="/images/Button.png" width="144px"/>
 
 **MessageBox** - Use the Mouse to click 'Launch'.<br>
-<img src="/images/MessageBox.png" width="144px"/>
+<img src="/images/MessageBox.png" width="244px"/>
 
 **TextBox** - Type anything (Text/Numbers).<br>
 <img src="/images/TextBoxBefore.png" width="244px"/>
