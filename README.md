@@ -22,7 +22,7 @@ Psuedo Graphical Forms is a static library API for developing User Interface on 
 
 ### UI Components Simulation
 **Panel** <br>
-<img src="/images/Panel.png" width="144px"/>
+<img src="/images/Panel.png" width="344px"/>
 
 **Label** <br>
 <img src="/images/Label.png" width="144px"/>
@@ -34,22 +34,22 @@ Psuedo Graphical Forms is a static library API for developing User Interface on 
 <img src="/images/MessageBox.png" width="144px"/>
 
 **TextBox** - Type anything (Text/Numbers).<br>
-<img src="/images/TextBoxBefore.png" width="144px"/>
-<img src="/images/TextBoxAfter.png" width="144px"/>
+<img src="/images/TextBoxBefore.png" width="244px"/>
+<img src="/images/TextBoxAfter.png" width="244px"/>
 
 **ComboBox** - Use Mouse to mark the desired option.<br>
-<img src="/images/ComboBoxBefore.png" width="144px"/>
-<img src="/images/ComboBoxAfter.png" width="144px"/>
+<img src="/images/ComboBoxBefore.png" width="244px"/>
+<img src="/images/ComboBoxAfter.png" width="244px"/>
 
 **RadioBox** - Use Space to mark the desired option, 'TAB' to Navigate.<br>
-<img src="/images/RadioBoxBefore.png" width="144px"/>
-<img src="/images/RadioBoxAfter.png" width="144px"/>
+<img src="/images/RadioBoxBefore.png" width="244px"/>
+<img src="/images/RadioBoxAfter.png" width="244px"/>
 
 **CheckList** - Use Space to mark the desired option, 'TAB' to Navigate.<br>
-<img src="/images/CheckListBefore.png" width="144px"/>
-<img src="/images/CheckListAfter.png" width="144px"/>
+<img src="/images/CheckListBefore.png" width="244px"/>
+<img src="/images/CheckListAfter.png" width="244px"/>
 
 **NumericBox** - Use the Mouse to click +/- and change the number value.<br>
-<img src="/images/NumericBoxBefore.png" width="144px"/>
-<img src="/images/NumericBoxAfter.png" width="144px"/>
+<img src="/images/NumericBoxBefore.png" width="244px"/>
+<img src="/images/NumericBoxAfter.png" width="244px"/>
 
