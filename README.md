@@ -50,6 +50,6 @@ Psuedo Graphical Forms is a static library API for developing User Interface on 
 <img src="/images/CheckListAfter.png" width="144px"/>
 
 **NumericBox** - Use the Mouse to click +/- and change the number value.<br>
-<img src="/Images/NumericBoxBefore.png" width="144px"/>
-<img src="/Images/NumericBoxAfter.png" width="144px"/>
+<img src="/images/NumericBoxBefore.png" width="144px"/>
+<img src="/images/NumericBoxAfter.png" width="144px"/>
 
